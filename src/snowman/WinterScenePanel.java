@@ -15,6 +15,7 @@ import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.ArrayList;
 
+
 public class WinterScenePanel extends JPanel implements Runnable
 {
 	private List<AbstractShape> shapes;
