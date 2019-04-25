@@ -33,7 +33,7 @@ public class WinterScenePanel extends JPanel implements Runnable
                     int y = (int)(Math.random() * 600); 
                     int s = (int)(Math.random() * 60) + 20; 
                     
-                    shapes.add(new FancySnowFlake(i*15, y, s, s));
+                    shapes.add(new FancySnowFlake(i*16, y, s, s));
                 }
                 
 		//instantiate a snowman
@@ -63,6 +63,7 @@ public class WinterScenePanel extends JPanel implements Runnable
                     snow.moveAndDraw(window);
                     if(snow.getYPos() >= getHeight()){
                         snow.setYPos(0);
+                        snow.setXPos((int)(Math.random() * 600));
                     }
                 }
 		//check to see if any of the snowflakes need to be reset to the top of the screen
